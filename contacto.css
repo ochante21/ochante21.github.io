@@ -1,0 +1,16 @@
+form {
+    display: grid;
+    grid-template-columns: 300px;
+    gap: 20px;
+
+}
+
+form div {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+label {
+    flex: 1;
+}

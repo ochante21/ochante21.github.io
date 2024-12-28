@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="compras.css">
     <title>Libromaniaco</title>
     <link rel="icon" href="assets/iconos/libros.png" type="image/png">
 </head>
@@ -21,7 +22,7 @@
 
     <nav>
         <ul class="navegacion">
-            <li><a href="#">
+            <li><a href="./index.html">
                     <h3>Inicio</h3>
                 </a></li>
             <!-- <li><a href="#">
@@ -32,51 +33,31 @@
                 </a></li>
 
         </ul>
-
-        <div id="carrito">
-            <a  href="./compras.html" id="btn_carrito" ></a>
-        </div>
     </nav>
 
     <main>
         <section>
-            <h2>Mas vendidos</h2>
-            <div id="mas_vendidos">
-                <!-- <article class="libros">
+            <h2>Carrito</h2>
+            <div id="contenedor_compras">
+                 <!-- <article class="libros_carrito">
                     <img src="./assets/libros/don quijote de la mancha.webp" alt="don quijote de la mancha">
-                    <h3 class="titulo">Don quijote de la mancha </h3>
+                    <div>
+                        <h3 class="titulo">Don quijote de la mancha </h3>
                     <h3 class="precio">$12.000</h3>
-                    <button class="agregar_carrito">Agregar al carrito</button>
+                    <button class="quitar_carrito">Quitar al carrito</button>
+                    </div>
+                    
 
-                </article> -->
+                </article>  -->
+            </div>
+            
+            <div>
+                <h3 class="precio_total">total</h3>
+                <output id="monto_total" class="precio_total">$0</output>
             </div>
 
         </section>
-        <section>
-            <h2>Reseñas</h2>
-            <div id="contenedor_reseñas">
-                <div class="reseña reseña1">
-                    <h3>Buenos precios</h3>
-                    <p>Aqui encontre los mejores precios del mercado</p>
-                    <cite>Juan Carrasco</cite>
-                </div>
-                <div class="reseña">
-                    <h3>Variedad de libros</h3>
-                    <p>Busque libros por otros lugares y solo los encontre en esta pagina web</p>
-                    <cite>Anita Retoño</cite>
-                </div>
-                <div class="reseña">
-                    <h3>Buena calidad</h3>
-                    <p>La calidad de los libros son de primera</p>
-                    <cite>Pedro Zapata</cite>
-                </div>
-                <div class="reseña">
-                    <h3>Entrega Rapida</h3>
-                    <p>Entregan los libros en el dia, mas rapido imposible</p>
-                    <cite>Carlos Segobia</cite>
-                </div>
-            </div>
-        </section>
+        
     </main>
 
     <footer>
@@ -89,7 +70,7 @@
         <p>Desarrollado por Psitacido</p>
     </footer>
 
-    <script src="./main.js"></script>
+    <script src="./compras.js"></script>
 
 </body>
 

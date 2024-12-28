@@ -37,13 +37,14 @@ nav {
     padding-left: 10px;
     /* border: 1px solid rgb(189, 204, 24); */
     font-family: "Permanent Marker";
-
+    display: flex;
 }
 
 .navegacion {
     list-style: none;
     display: flex;
     gap: 20px;
+    flex: 1;
 }
 
 .navegacion h3 {
@@ -52,6 +53,31 @@ nav {
 
 .navegacion h3:hover {
     color: #8a05cde2;
+}
+
+
+
+#btn_carrito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: rgba(201, 3, 3, 0.893);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url('./assets/iconos/carrito-de-compras.png');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#btn_carrito:hover {
+    transform: scale(1.1);
+}
+
+#btn_carrito:active {
+    transform: scale(0.9);
 }
 
 main {
@@ -79,7 +105,7 @@ main h2 {
 
 .libros {
     width: 200px;
-    height: 350px;
+    height: 370px;
     border-radius: 10px;
     border: 1px solid #003366;
     display: flex;
@@ -101,6 +127,18 @@ main h2 {
 
 .titulo {
     flex: 1;
+}
+
+.agregar_carrito {
+    all: unset;
+    margin: 0 10px 5px 10px;
+    background-color: aqua;
+    border: 1px solid rgb(24, 165, 165);
+    text-align: center
+}
+
+.agregar_carrito:hover {
+    transform: scale(1.05);
 }
 
 #contenedor_reseñas {
@@ -157,13 +195,13 @@ footer a:hover {
 @media (max-width: 400px) {
     #contenedor_reseñas {
         grid-template-columns: 1fr 1fr;
-        gap: 10px;
+        gap: 15px;
     }
 }
 
 @media (max-width: 380px) {
     .navegacion {
-        gap: 5px;
+        gap: 15px;
     }
 
     #contenedor_reseñas {

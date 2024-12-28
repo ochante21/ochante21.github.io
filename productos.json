@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "nombre": "Don quijote de la mancha",
+        "imagen": "./assets/libros/don quijote de la mancha.webp",
+        "precio": 12000
+    },
+    {
+        "id":2,
+        "nombre": "El señor de los anillos",
+        "imagen": "./assets/libros/señor de los anillos.webp",
+        "precio": 15000
+    },
+    {
+        "id":3,
+        "nombre": "Alicia en el pais de las maravillas",
+        "imagen": "./assets/libros/alicia pais maravilas.jpg",
+        "precio": 18000
+    },
+    {
+        "id":4,
+        "nombre": "La bruja, el leon y el armario",
+        "imagen": "./assets/libros/narnia.webp",
+        "precio": 12000
+    },
+    {
+        "id":5,
+        "nombre": "El alquimista",
+        "imagen": "./assets/libros/el alquimista.jpg",
+        "precio": 10000
+    }
+]

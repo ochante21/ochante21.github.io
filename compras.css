@@ -1,0 +1,28 @@
+.libros_carrito{
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid #003366;
+    display: flex;
+    overflow: hidden;
+}
+
+.libros_carrito>img{
+    width: 70px;
+    height: 100%;
+}
+.libros_carrito>div{
+    padding:0 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+.quitar_carrito{
+    all: unset;
+    background-color: rgba(255, 0, 0, 0.712);
+    margin: 5px auto 5px auto;
+}
+
+.precio_total{
+    font-size: x-large ;
+    font-weight: bold;
+}

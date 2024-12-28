@@ -1,3 +1,8 @@
+#contenedor_compras{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px
+}
 .libros_carrito{
     width: 300px;
     height: 100px;

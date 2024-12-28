@@ -6,6 +6,7 @@ console.log(array_compras);
 //DOM
 let contenedor_compras= document.getElementById('contenedor_compras');
 let contenedor_precio_total=document.getElementById('monto_total');
+let contenedor_cantidad_productos=document.getElementById('cantidad_productos')
 //FUNCIONES
 function pintar_compras(array_libros) {
     let lista_libros = ``;
@@ -45,6 +46,10 @@ function pintar_compras(array_libros) {
 function pintar_precio_total(){
     contenedor_precio_total.innerHTML=`${"$" + precio_total}`;
 }
+function pintar_cantidad_productos(){
+    let cantidad_productos= array_compras.length;
+    contenedor_cantidad_productos.innerHTML= `${cantidad_productos}`;
+}
 
 function obtener_carrito_LocalStorage() {
     const carritoGuardado = localStorage.getItem('carrito');
@@ -58,4 +63,5 @@ function guardar_carrito_LocalStorage(array_compras) {
 
 //LLAMADA DE FUNCIONES
 pintar_compras(array_compras);
+pintar_cantidad_productos();
 pintar_precio_total();

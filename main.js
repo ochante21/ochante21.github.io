@@ -1,5 +1,6 @@
 //VARIABLES
 let array_compras = obtener_carrito_LocalStorage();
+
 console.log(array_compras);
 
 //DOM
@@ -29,6 +30,7 @@ function pintar_libros(array_libros) {
             array_compras.push(producto_seleccionado);
             guardar_carrito_LocalStorage(array_compras);
             alert(`¡ "${producto_seleccionado.nombre}" agregado al carrito!`);
+            btn_carrito.innerText= `${array_compras.length}`;
             console.log(array_compras);
         });
     });
@@ -65,3 +67,7 @@ const obtener_libros = async () => {
 
 //LLAMADA DE FUNCIONES
 obtener_libros();
+if(array_compras.length!=0){
+    btn_carrito.innerText= `${array_compras.length}`;
+}
+
